@@ -1,5 +1,4 @@
 ﻿import {animated, useSpring} from "@react-spring/web";
-import {cn} from "@udecode/cn";
 import {useState} from "react";
 
 function FrontSide({heading}: Readonly<{ heading: string }>) {
@@ -37,14 +36,14 @@ function FrontSide({heading}: Readonly<{ heading: string }>) {
 function BackSide() {
     return (
         <div className="rotate-y-180">
-            <div className="flex flex-col text-start items-start gap-2">
+            <div className="flex flex-col text-start items-start gap-2 min-w-[30rem] p-14">
                 <p className="font-semibold text-xl lg:text-2xl">
                     Info
                 </p>
                 <ul className="list-none md:list-disc list-inside">
                     <li>Riietus: <span className="italic">smart-casual</span></li>
                     <li>Kingituseks sobivad soojad soovid ... paberkandjal</li>
-                    <li>Palume kinnitada osalemine 10. maiks kirjutades: <a className="cursor-pointer"
+                    <li>Palume kinnitada osalemine 20. augustiks kirjutades: <a className="cursor-pointer"
                                                                             href="mailto:mariliisoruste@gmail.com">mariliisoruste@gmail.com</a>
                     </li>
                 </ul>
@@ -73,12 +72,11 @@ function Invitation({heading}: Readonly<{ heading: string }>) {
                 }}
                 className="flex flex-col items-center justify-center h-full perspective-midrange max-w-[29rem] m-auto">
 
-                <div className="relative w-full aspect-[4/5] flex justify-center items-center">
-                    {/* Decorative border SVG as background */}
-                    <div className="absolute -top-1/2 -left-1/2 inset-0 z-[-1] w-[200%] h-[200%]  bg-[url('/assets/bg.svg')] bg-no-repeat bg-contain bg-[position:40%_45%] pointer-events-none"/>
+                <div className="relative aspect-square flex justify-center items-center">
+                    <div className="absolute inset-0 z-10 bg-[url('/assets/bg.svg')] bg-no-repeat bg-contain bg-[position:50%_50%] bg-clip-content pointer-events-none"/>
 
                     {/* Card content */}
-                    <div className="relative border shadow-xl rounded-md p-10 text-center bg-white/90 backdrop-blur-md">
+                    <div className="relative p-28 text-center bg-white/90 backdrop-blur-md">
                         <div className="flex flex-col items-center justify-center gap-10 backface-hidden">
                             {flipped ? <BackSide/> : <FrontSide heading={heading}/>}
                         </div>
