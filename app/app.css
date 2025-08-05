@@ -10,12 +10,3 @@
   font-weight: 400;
   font-style: normal;
 }
-
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
-}
