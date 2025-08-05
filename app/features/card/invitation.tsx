@@ -70,7 +70,7 @@ function Invitation({heading}: Readonly<{ heading: string }>) {
                 style={{
                     transform: rotation.to(r => `rotateY(${r}deg)`)
                 }}
-                className="flex flex-col items-center justify-center h-full perspective-midrange max-w-[29rem] m-auto">
+                className="flex flex-col items-center justify-center perspective-midrange max-w-[29rem] m-auto">
 
                 <div className="relative aspect-square flex justify-center items-center">
                     <div className="absolute inset-0 z-10 bg-[url('/assets/bg.svg')] bg-no-repeat bg-contain bg-[position:50%_50%] bg-clip-content pointer-events-none"/>
@@ -83,7 +83,7 @@ function Invitation({heading}: Readonly<{ heading: string }>) {
                     </div>
                 </div>
             </animated.div>
-            <div className="absolute left-0 right-0 bottom-0 mt-4 mb-2 lg:mb-14 m-auto">
+            <div className="mb-2 lg:mb-14 m-auto">
                 <div className="flex flex-row items-center justify-center font-medium text-xl gap-4">
                     <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd"
