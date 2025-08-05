@@ -83,7 +83,7 @@ function Invitation({heading}: Readonly<{ heading: string }>) {
                     </div>
                 </div>
             </animated.div>
-            <div className="absolute left-0 right-0 bottom-0 mb-2 lg:mb-14 m-auto">
+            <div className="absolute left-0 right-0 bottom-0 mt-4 mb-2 lg:mb-14 m-auto">
                 <div className="flex flex-row items-center justify-center font-medium text-xl gap-4">
                     <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd"
