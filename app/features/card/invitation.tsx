@@ -4,21 +4,21 @@ import {useState} from "react";
 function FrontSide({heading}: Readonly<{ heading: string }>) {
     return (
         <>
-            <p className="cursive text-6xl">
+            <p className="cursive text-2xl lg:text-6xl">
                 {heading}
             </p>
-            <p className="flex flex-col gap-0.5 text-center text-xl pt-5 font-medium">
+            <p className="flex flex-col gap-0.5 text-center text-sm lg:text-xl pt-5 font-medium">
                 <span>Olete oodatud meie abielu sõlmimisele</span>
                 <span>ja pidulikule õhtusöögile</span>
             </p>
             <div
-                className="flex flex-col sm:flex-row items-center justify-center gap-2 font-bold text-xl lg:text-2xl">
+                className="flex flex-col sm:flex-row items-center justify-center gap-2 font-bold text-sm lg:text-2xl">
                 <span>Mari-Liis</span>
                 <span>&</span>
                 <span>Stanislav</span>
             </div>
             <div
-                className="flex flex-col items-center justify-center gap-2 text-md font-medium text-center">
+                className="flex flex-col items-center justify-center gap-2 text-sm lg:text-md font-medium text-center">
                 <p>
                     20. september 2025 kell 15.30
                 </p>
@@ -36,7 +36,7 @@ function FrontSide({heading}: Readonly<{ heading: string }>) {
 function BackSide() {
     return (
         <div className="rotate-y-180">
-            <div className="flex flex-col text-start items-start gap-2 min-w-[30rem] p-14">
+            <div className="flex flex-col text-center lg:text-start items-center lg:items-start gap-2 min-w-[30rem] lg:p-14">
                 <p className="font-semibold text-xl lg:text-2xl">
                     Info
                 </p>
@@ -76,8 +76,8 @@ function Invitation({heading}: Readonly<{ heading: string }>) {
                     <div className="absolute inset-0 z-10 bg-[url('/assets/bg.svg')] bg-no-repeat bg-contain bg-[position:50%_50%] bg-clip-content pointer-events-none"/>
 
                     {/* Card content */}
-                    <div className="relative p-28 text-center bg-white/90 backdrop-blur-md">
-                        <div className="flex flex-col items-center justify-center gap-10 backface-hidden">
+                    <div className="relative p-24 lg:p-28 text-center bg-white/90 backdrop-blur-md">
+                        <div className="flex flex-col items-center justify-center gap-4 lg:gap-10 backface-hidden">
                             {flipped ? <BackSide/> : <FrontSide heading={heading}/>}
                         </div>
                     </div>
