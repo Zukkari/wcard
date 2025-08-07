@@ -43,8 +43,10 @@ function BackSide() {
                 <ul className="list-none md:list-disc list-inside">
                     <li>Riietus: <span className="italic">smart-casual</span></li>
                     <li>Kingituseks sobivad soojad soovid ... paberkandjal</li>
-                    <li>Palume kinnitada osalemine 20. augustiks kirjutades: <a className="cursor-pointer"
+                    <li>Palume kinnitada osalemine 31. augustiks kirjutades: <a className="cursor-pointer"
                                                                             href="mailto:mariliisoruste@gmail.com">mariliisoruste@gmail.com</a>
+                        <br></br>
+                        või helistades 59039671
                     </li>
                 </ul>
             </div>
